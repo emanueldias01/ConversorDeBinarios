@@ -1,5 +1,17 @@
 #include<stdio.h>
 
+void operacaoBinario(int numeroDecimal){
+    while(numeroDecimal/2 >= 1){
+        printf("%d", numeroDecimal%2);
+        if(numeroDecimal <= 2){
+            printf("%d", numeroDecimal/2);
+        }
+        numeroDecimal /=2;
+
+    }
+
+}
+
 int main(){
 
     int numeroDecimal;
@@ -15,7 +27,9 @@ int main(){
         
     }
     tamanho++;
-    printf("%d", tamanho);
+    printf("%d\n\n", tamanho);
+
+    operacaoBinario(numeroDecimal);
 
 
     return 0;
