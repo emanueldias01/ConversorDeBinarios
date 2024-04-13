@@ -49,6 +49,26 @@ void operacaoBinario(int numeroDecimal){
 
     }
 
+    printf("\nEm binario: ");
+
+    int binario[contadorIndiceVetor];
+    int contadorIndice = 0;
+
+
+    //transferindo para o outro vetor de maneira invertida
+    for(int i = contadorIndiceVetor; i>=0; i--){
+        binario[i-1] = vetorBinarioInvertido[contadorIndice];
+        contadorIndice++;
+    }
+
+    //printando resultado
+    for(int i = 0; i < contadorIndiceVetor; i++){
+        printf("%d", binario[i]);
+
+    }
+
+    printf("\ncontador indice: %d", contadorIndice);
+
 }
 
 int main(){
