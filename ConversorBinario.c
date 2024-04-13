@@ -2,7 +2,7 @@
 
 void operacaoBinario(int numeroDecimal){
     
-
+    int numBinarioOpc = numeroDecimal;
     int numeroOpc = numeroDecimal;
     int tamanho = 0;
     while (numeroOpc/10 > 0){
@@ -25,10 +25,29 @@ void operacaoBinario(int numeroDecimal){
         numeroDecimal /=2;
 
     }
-    printf("tamanho do binario: %d", tamanhoVetorBinario);
+    printf("tamanho do binario: %d\n", tamanhoVetorBinario);
 
-    int vetorBinario[tamanhoVetorBinario];
 
+
+    int vetorBinarioInvertido[tamanhoVetorBinario];
+    int contadorIndiceVetor = 0;
+    while(numBinarioOpc/2 >=1){
+        vetorBinarioInvertido[contadorIndiceVetor] = numBinarioOpc%2;
+        contadorIndiceVetor++;
+        if(numBinarioOpc <= 2){
+            vetorBinarioInvertido[contadorIndiceVetor] = numBinarioOpc/2;
+            contadorIndiceVetor++;
+        }
+
+        numBinarioOpc /= 2;
+    }
+
+    printf("binario invertido: ");
+
+    for(int i = 0; i < contadorIndiceVetor; i++){
+        printf("%d", vetorBinarioInvertido[i]);
+
+    }
 
 }
 
