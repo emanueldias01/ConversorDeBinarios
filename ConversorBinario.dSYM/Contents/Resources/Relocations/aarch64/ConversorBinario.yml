@@ -2,7 +2,7 @@
 triple:          'arm64-apple-darwin'
 binary-path:     '/Users/emanuelaraujo/Documents/GitHub/ConversorDeBinarios/ConversorBinario'
 relocations:
-  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _operacaoBinario, symObjAddr: 0x0, symBinAddr: 0x100003DEC, symSize: 0xB8 }
-  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _operacaoBinario, symObjAddr: 0x0, symBinAddr: 0x100003DEC, symSize: 0xB8 }
-  - { offsetInCU: 0x65, offset: 0x65, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0xB8, symBinAddr: 0x100003EA4, symSize: 0xC0 }
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _operacaoBinario, symObjAddr: 0x0, symBinAddr: 0x100003D40, symSize: 0x1A4 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _operacaoBinario, symObjAddr: 0x0, symBinAddr: 0x100003D40, symSize: 0x1A4 }
+  - { offsetInCU: 0x9B, offset: 0x9B, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x1A4, symBinAddr: 0x100003EE4, symSize: 0x54 }
 ...
